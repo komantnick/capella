@@ -6,7 +6,8 @@ require_once('database.php');
 $database = new DatabaseWorker();
 $ip = $database->getUserIP();
 $database_name = 'capella-storage';
-
+$id="444jjk3k33";
+$extension="png";
 try {
     $database->query('INSERT INTO ' . $database_name . ' (id,extension,ip) VALUES (:id,:extension,:ip)');
     $database->bind(':id', $id);
